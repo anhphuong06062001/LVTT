@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết quả</title>
+</head>
+<body>
+    <h1>Thống kê thông tin dữ liệu</h1>
+    {{ st | safe }}
+    <h1>Biểu đồ Lưu lượng UP và DOWN theo tháng</h1>
+    <img src="data:image/png;base64,{{ plot_url1 }}" alt="Biểu đồ 1">
+    
+    <h1>Biểu đồ Lưu lượng UP và DOWN hàng ngày</h1>
+    <img src="data:image/png;base64,{{ plot_url2 }}" alt="Biểu đồ 2">
+</body>
+</html>
